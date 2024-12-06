@@ -1,0 +1,33 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/assert@*": "1.0.8",
+    "jsr:@std/assert@1": "1.0.8",
+    "jsr:@std/internal@^1.0.5": "1.0.5"
+  },
+  "jsr": {
+    "@std/assert@1.0.8": {
+      "integrity": "ebe0bd7eb488ee39686f77003992f389a06c3da1bbd8022184804852b2fa641b",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.5": {
+      "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    }
+  },
+  "redirects": {
+    "https://deno.land/x/range": "https://deno.land/x/range@v0.4.0"
+  },
+  "remote": {
+    "https://cdn.skypack.dev/-/lodash-es@v4.17.21-rDGl8YjBUjcrrAbjNrmo/dist=es2019,mode=imports/optimized/lodash-es.js": "4a1b35d34b5e0d3ae68aa46ddaabb9700ccecb75b830974db7c46a271f10daa8",
+    "https://cdn.skypack.dev/error/unknown:lodash?from=lodash-es": "c042c6105b8140042d5fe8fc6406d0a2296b10a94e5e0a31c0c68bc9b84e6ec5",
+    "https://cdn.skypack.dev/lodash-es": "7dc1d11c01e46bf442774791267f7ca93f6cc204451ac648f2560b0cd6c91524",
+    "https://cdn.skypack.dev/lodash-es?dts": "7dc1d11c01e46bf442774791267f7ca93f6cc204451ac648f2560b0cd6c91524"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1"
+    ]
+  }
+}
