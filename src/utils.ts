@@ -1,5 +1,8 @@
-export function cartesian<T, U>(a: T[], b: U[]) {
-  return a.flatMap((x) => b.map((y) => [x, y]) as [T, U][]);
+export function cartesian<T>(...arrays: T[][]): T[][] {
+  return arrays.reduce<T[][]>(
+    (acc, array) => acc.flatMap((x) => array.map((y) => [...x, y])),
+    [[]],
+  );
 }
 
 export function hash(a: number, b = 0, c = 0) {
