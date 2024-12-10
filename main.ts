@@ -1,7 +1,7 @@
 async function runChallenge(day: number) {
   try {
     const { part1, part2 } = await import(`./src/${day}.ts`);
-    const input = await Deno.readTextFile(`./src/${day}.txt`);
+    const input = await Deno.readTextFile(`./src/input/${day}.txt`);
 
     console.log(`[Day ${day}]`);
 
@@ -9,7 +9,7 @@ async function runChallenge(day: number) {
       performance.mark("start");
       const answer = part === 1 ? part1(input) : part2(input);
       performance.mark("end");
-      const { duration } = performance.measure("start", "end");
+      const { duration } = performance.measure("measure", "start", "end");
       console.log(`Part ${part}: ${answer} (${duration.toFixed(2)}ms)`);
     };
 
