@@ -27,7 +27,7 @@ if (selectedDay) {
 } else {
   for (let i = 1; i <= 25; i++) {
     try {
-      runChallenge(i);
+      await runChallenge(i);
     } catch {
       // Not yet implemented
       break;
