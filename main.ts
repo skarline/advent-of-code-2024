@@ -15,7 +15,8 @@ async function runChallenge(day: number) {
 
     if (part1) run(1);
     if (part2) run(2);
-  } catch {
+  } catch (error) {
+    console.error(error);
     return new Error(`Day ${day} not yet implemented`);
   }
 }
