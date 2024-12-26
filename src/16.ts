@@ -74,7 +74,7 @@ function createCostMatrix(matrix: string[][], start: Point) {
   return costMatrix;
 }
 
-function part1(input: string) {
+export function part1(input: string) {
   const { matrix, start, end } = parse(input);
 
   const costMatrix = createCostMatrix(matrix, start);
